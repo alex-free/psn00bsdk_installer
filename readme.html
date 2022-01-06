@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PSN00bSDK Installer</title>
+</head>
+<body style="background-color:black; color:white;" link="#58D3F7" alink="#FF00FF" vlink="#58D3F7">
+
+<h1>PSN00bSDK Installer</h1>
+<p>By Alex Free</p>
+
+<p>A quick, automatic, and easy unofficial installer for <a href=https://github.com/lameguy64>LameGuy64's</a> <a href=https://github.com/Lameguy64/PSN00bSDK>PSN00bSDK</a> designed for 64 bit Windows, Fedora, Ubuntu, and Debian systems.</p>
+
+<p>Features:</p>
+<ul><li>Installs any and all required build dependencies automatically using APT, DNF, or PACMAN (MSYS2).</li>
+<li>Builds GCC 11.2.0 and Binutils 2.37 for mipsel-unknown-elf.</li>
+<li>Sets up the PSnoobSDK with C++ support.</li>
+<li>Tests everything by building the PSnoobSDK examples.</li>
+<li>Compiles and installs <a href=https://cmake.org/>CMake</a> v3.22.1 (a very recent CMake version is required for the PSN00bSDK but is not available in package managers as of 1/6/2022).</li></ul>
+
+<p><img src="mipsel-unknown-elf-gcc.png" alt=mipsel-unknown-elf-gcc" height="600"></p>
+
+<p><a href=https://github.com/alex-free/PSN00bSDK_installer>PSN00bSDK Installer GitHub</a> || <a href=https://alex-free.githib.io/PSN00bSDK_installer>PSN00bSDK Installer Homepage</a> || <a href=https://github.com/lameguy64/PSN00bSDK>PSN00bSDK Official GitHub</a></p>
+
+<h2>Table Of Contents</h2>
+<ul><li><a href="#downloads">Downloads</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#changelog">Changlog</a></li>
+<l><a href="#bundled">Bundled Software And Licensing</a></li></ul>
+
+<a name=downloads><h2>Downloads</h2></a>
+<h3>Version 1.2 - (1/6/2022) - <a href="#changelog">What's New In This Version?</a></h3>
+<p><a href=https://github.com/alex-free/PSN00bSDK_installer/releases/download/1.2/psn00bsdk_installer-1.2.zip><i>PSN00bSDK Installer v1.2 For Windows and Linux</i></a></p>
+
+<p>You can also use git: <pre><code>git clone https://github.com/alex-free/PSN00bSDK_installer</code></pre></p>
+
+<a name=usage><h2>Usage</h2></a>
+
+<p>Download the latest PSN00bSDK_Installer, and run the <code>ipsxsdk</code> script with <code>sudo</code> or root.</p> 
+
+<b>Important:</b> You need to put the SDK/toolchain/CMake in your <code>$PATH</code> to use it after running the <code>ipsxsdk</code> script: <pre><code>export PATH=/usr/local/mipsel-unknown-elf/bin:$PATH</code></pre></p>
+
+<a name=changelog><h2>Changelog</h2></a>
+
+<h3>Version 1.2</h3>
+
+<ul><li>Updated Debian/Ubuntu dependency list.</li>
+<li>Added <a href=http://cmake.org>CMake</a> to the compile.</li>
+<li>Updated GCC 7.4.0 to 11.2.0.</li>
+<li>Updated Binutils 2.31.1 to 2.37.</li>
+<li>Updated the <code>ipsxsdk</code> script to work with the new CMake based PSN00bSDK.</li>
+<li>Rewrote documentation in HTML</li>
+<li>Changed from downloading any needed source to containing it locally in the installer itself.</li>
+<li>Installs the PSN00bSDK directly into <code>/usr/local/mipsel-unknown-elf</code>, the same prefix that the toolchain is in.</li></ul>
+
+<a name=bundled><h2>Bundled Software And Licensing</h2></a>
+<ul><li><a href=https://gcc.gnu.org/>GCC</a> v11.2.0 is licensed under the GNU GPL version 3 or later, with the gcc runtime excpetion for compiled software.</li>
+<li><a href=https://www.gnu.org/software/binutils/>Binutils</a> v2.37 is licensed under the GNU GPL version 3 or later.</li>
+<li><a href=https://cmake.org>CMake</a> v3.22.1 is licensed under the 3-BSD license.</li>
+<li><a href=https://github.com/lameguy64/PSN00bSDK>PSN00bSDK</a> is the latest version as of 12/6/2022, and is licensed under the Mozilla Public License 2.0.</li></ul>
+
+<p>The PSN00bSDK installer itself is released into the public domain, see the file <code>unlicense.txt</code> in each release.</p>
+
+</body>
+</html>
